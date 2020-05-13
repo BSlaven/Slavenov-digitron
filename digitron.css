@@ -1,0 +1,154 @@
+body {
+    background: #1D4350;
+    background: linear-gradient(to right, #A43931, #1D4350);
+    display: flex;
+}
+
+#digitron {
+    background: #4CA1AF;
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF);
+    border-radius: 5px;
+    margin: 100px auto;
+    width: minmax(50% 300px);
+    border: 5px solid rgba(57, 68, 60, 0.6);
+    display: grid;
+    grid-template-areas:
+        "rezultat rezultat rezultat rezultat rezultat"
+        "jedan dva tri plus brišiInput"
+        "četiri pet šest minus korijen"
+        "sedam osam devet puta kvadrat"
+        "brišiSve nula zarez podjeljeno jednako";
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+sup {
+    font-size: 14px;
+}
+
+.svi-isto {
+    padding: 0;
+    height: 70px;
+    background-color: #d3e4e1;
+    border: 2px solid rgb(102, 27, 27, 0.8);
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svi-isto:hover {
+    background-color: white;
+    color: red;
+}
+
+#rezultat {
+    background-color: lightgrey;
+    grid-area: rezultat;
+    margin: 0;
+}
+
+#trenutno {
+    color: rgb(102, 27, 27);
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 50%;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+#jedan {
+    grid-area: jedan;
+}
+
+#dva {
+    grid-area: dva;
+}
+
+#tri {
+    grid-area: tri;
+}
+
+#plus {
+    grid-area: plus;
+    font-size: 18px;
+}
+
+#četiri {
+    grid-area: četiri;
+}
+
+#pet {
+    grid-area: pet;
+}
+
+#šest {
+    grid-area: šest;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#sedam {
+    grid-area: sedam;
+}
+
+#osam {
+    grid-area: osam;
+}
+
+#devet{
+    grid-area: devet;
+}
+
+#puta {
+    grid-area: puta;
+}
+
+#brišiSve {
+    grid-area: brišiSve;
+    font-size: 18px;
+}
+
+#nula {
+    grid-area: nula;
+}
+
+#jednako {
+    grid-area: jednako;
+    font-size: 18px;
+}
+
+#podjeljeno {
+    grid-area: podjeljeno;
+}
+
+#brišiInput {
+    grid-area: brišiInput;
+    font-size: 14px;
+}
+
+#korijen {
+    grid-area: korijen;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#kvadrat {
+    grid-area: kvadrat;
+    font-size: 18px;
+}
+
+#zarez {
+    grid-area: zarez;
+}
